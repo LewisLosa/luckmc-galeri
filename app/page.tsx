@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import LightGallery from "lightgallery/react";
+import LightGallery from "lightgallery/react"
+import type { LightGallery as LightGalleryInstance } from "lightgallery/lightgallery";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
@@ -31,7 +32,7 @@ export default function HomePage() {
 }
 
 function ImageGallery() {
-  const lightGalleryRef = useRef<any>(null);
+  const lightGalleryRef = useRef<LightGalleryInstance | null>(null);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const handleOpen = useCallback((index: number) => {

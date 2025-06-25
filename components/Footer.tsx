@@ -1,52 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
-
-type SocialLink = {
-  name: string;
-  icon: React.ElementType;
-  url: string;
-  ariaLabel: string;
-};
-
-//Sosyal Medya Bağlantılar cart curt
-const socialMediaLinks: SocialLink[] = [
-  {
-    name: "GitHub",
-    icon: FaGithub,
-    url: "https://github.com",
-    ariaLabel: "GitHub profilimizi ziyaret edin",
-  },
-  {
-    name: "Twitter",
-    icon: FaTwitter,
-    url: "https://twitter.com",
-    ariaLabel: "Twitter profilimizi takip edin",
-  },
-  {
-    name: "LinkedIn",
-    icon: FaLinkedin,
-    url: "https://linkedin.com",
-    ariaLabel: "LinkedIn profilimize bağlanın",
-  },
-  {
-    name: "Instagram",
-    icon: FaInstagram,
-    url: "https://instagram.com",
-    ariaLabel: "Instagram sayfamızı takip edin",
-  },
-  {
-    name: "YouTube",
-    icon: FaYoutube,
-    url: "https://youtube.com",
-    ariaLabel: "YouTube kanalımıza abone olun",
-  },
-];
+import { socialMediaLinks } from "@/constants/socials";
 
 const Footer: React.FC = () => {
   return (
@@ -65,7 +18,6 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={social.ariaLabel}
-            // Kart Stili: Renkler, boyut, efektler
             className="
               flex items-center justify-center gap-3
               px-4 py-3 

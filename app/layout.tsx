@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     authors: ['Eyüp Şengöz', 'losa.dev', 'LewisLosa', 'LuckMC'],
     images: [
       {
-        url: "/og-image.avif",
+        url: "https://galeri.luckmc.net/og-image.avif",
         width: 1920,
         height: 1080,
         alt: "LuckMC Galerisi",

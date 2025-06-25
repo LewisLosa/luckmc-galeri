@@ -40,7 +40,7 @@ export default function Hero() {
       </p>
 
       {/* vignette efekt */}
-      <div className="pointer-events-none absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_0%,_rgba(0,0,0,0.6)_100%)] blur-lg"></div>
+      <div className="pointer-events-none absolute inset-0 z-20 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_35%,_rgba(0,0,0,0.6)_150%)]  dark:bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_0%,_rgba(0,0,0,0.7)_100%)]"></div>
     </motion.div>
   );
 }

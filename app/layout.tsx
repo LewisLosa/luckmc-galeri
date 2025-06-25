@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -11,7 +11,33 @@ const PoppinsSans = Poppins({
 export const metadata: Metadata = {
   title: "LuckMC Galerisi",
   description: "LuckMC Minecraft sunucusunun görselleri",
+  alternates: {
+    canonical: "https://galeri.luckmc.net/",
+    languages: {
+      "tr": "https://galeri.luckmc.net/"
+    },
+  },
+  
+  openGraph: {
+    title: "LuckMC Galerisi",
+    description: "LuckMC Minecraft sunucusunun görselleri",
+    url: "https://galeri.luckmc.net/",
+    authors: ['Eyüp Şengöz', 'losa.dev', 'LewisLosa', 'LuckMC'],
+    images: [
+      {
+        url: "/og-image.avif",
+        width: 1920,
+        height: 1080,
+        alt: "LuckMC Galerisi",
+      },
+    ],
+    siteName: "LuckMC Galerisi",
+  },
 };
+
+export const viewport: Viewport = {
+  themeColor: '#5aefb2',
+}
 
 export default function RootLayout({
   children,

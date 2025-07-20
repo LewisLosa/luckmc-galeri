@@ -36,7 +36,7 @@ export default function Hero() {
 
       {/* hero alt yazi */}
       <p className="mt-4 text-lg md:text-xl max-w-xl text-neutral-600 dark:text-neutral-300 z-10">
-        Hayallerinizdeki skyblock deneyimi burada başlıyor. Adanı kur, imparatorluğunu genişlet ve zirveye oyna!
+        İşte, aradığın Minecraft sunucusu.
       </p>
 
       {/* vignette efekt */}
